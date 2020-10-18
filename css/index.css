@@ -1,0 +1,139 @@
+/*******
+ Header
+*******/
+
+h1 {
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-size: 250%;
+    text-align: center;
+}
+nav li {
+    bottom: 0;
+}
+
+/* Desktop Only Header */
+
+@media only screen and (min-width: 70em) {
+    nav {
+        background-color: rgb(60, 2, 56);
+    }
+    h1 {
+        margin: 0 60% 0 20%;
+        padding: 6em 0.5em 0;
+        width: 20%;
+    }
+}
+
+/* Desktop and Tablet Header */
+
+@media only screen and (min-width: 50em) {
+    h1 {
+        height: 50rem;
+    }
+}
+
+/* Tablet and Phone Header */
+
+@media only screen and (max-width: 70em) {
+    h1 {
+        margin-left: calc(100% / 3);
+        padding: 1em 0.5em 0;
+    }
+    #home {
+        bottom: calc(100vw / 3);
+    }
+    #discovery-log-button {
+        padding-top: 27em;
+    }
+}
+
+/* Phone Only Header */
+
+@media only screen and (max-width: 50em) {
+    h1 {
+        height: calc(20rem + 37vw);
+    }
+}
+
+/*****
+ Main
+*****/
+
+#contents {
+    box-sizing: border-box;
+    position: absolute;
+}
+#portsmouth figure {
+    background-color: rgb(38, 38, 38);
+}
+#portsmouth figcaption {
+    padding: 2em 1em;
+}
+#portsmouth h3, #portsmouth p {
+    color: rgb(255, 255, 255)
+}
+#uopimage {
+    height: 68%;
+    padding: 5% 0 0 5%;
+    width: 52%;
+}
+
+/* Desktop Only Main */
+
+@media only screen and (min-width: 70em) {
+    #contents {
+        padding: 10em 1em 20em;
+    }
+    aside ~ article:first-of-type {
+        margin: 0 40% 0 20%;
+        padding: 8em 1em 8em 0;
+    }
+    #portsmouth figure {
+        width: 40%;
+    }
+}
+/* Desktop and Tablet Main */
+
+@media only screen and (min-width: 50em) {
+    #portsmouth {
+        background: url(../media/background.jpg) no-repeat center center;
+        height: 1080px;
+        position: relative;
+    }
+    #portsmouth figure {
+        display: table-row;
+        left: 0;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    .twocolumntable{
+        display: table-cell;
+        vertical-align: middle;
+        width: 50%;
+    }
+}
+
+/* Tablet Only Main */
+
+@media only screen and (max-width: 70em) and (min-width: 50em) {
+    #portsmouth figure {
+        width: calc(2 * (100% / 3));
+    }
+}
+
+/* Phone Only Main */
+
+@media only screen and (max-width: 50em) {
+    #portsmouth {
+        background: none;
+    }
+    #portsmouth figure {
+        display: block;
+        padding: 0.01em;
+    }
+    .twocolumntable{
+        display: block;
+    }
+}

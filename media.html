@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en-GB">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UP895937 | Media</title>
+<link href="css/supporting-style.css" rel="stylesheet">
+<link href="css/media.css" rel=stylesheet>
+<link href="css/style.css" rel="stylesheet">
+<link rel="icon" href="media/favicon.ico">
+<nav>
+    <h1>UP895937</h1>
+    <ul>
+        <li id="home"><a href=index.html class="circle">Home</a>
+        <li id="discovery-log-button"><a href="discovery-log.html" class="circle">Discovery Log</a>
+        <li id="literature-review-button"><a href="literature-review.html" class="circle">Literature Review</a>
+        <li id="media-button"><a href="#media" class="circle">Media</a>
+    </ul>
+</nav>
+<main>
+    <aside id="contents">
+        <ul>
+            <li><h4><a href="#home">Contents</a></h4>
+            <li><a href="#media">Media</a>
+            <li><a href="#image">Image</a>
+            <li><a href="#video">Video</a>
+            <li><a href="#validation">Validation</a>
+        </ul>
+    </aside>
+    <article id="media">
+        <h2>Media</h2>
+        <h3 id="image">Image</h3>
+        <picture>
+            <source media="(min-width: 70em)" srcset="media/picture-3x3.png">
+            <source media="(min-width: 50em)" srcset="media/picture-3x2.png">
+            <source srcset="media/picture-2x3.png">
+            <img src="media/picture-2x2.png" alt="A collage of pictures from the Portsmouth boxing match.">
+        </picture>
+        <p>Above is an image which is a collage of pictures from a Portsmouth boxing match. This has been implemented using a picture tag to make the image responsive. Thus, on a laptop sized screen you should see a 3 by 3 collage, then on a tablet sized screen a 3 by 2 landscape collage and on a phone sized screen a 2 by 3 portrait collage. Plus there is a 2 by 2 back-up collage image in case the picture tag isn't recognised. (Please note; that it isn't me in the pictures).</p>
+        <h3 id="video">Video</h3>
+        <video controls>
+            <source src="media/video.webm" type="video/webm">
+            <source src="media/video.mp4" type="video/mp4">
+            <source src="media/video.ogg" type="video/ogg">
+            A video of highlights from a Portsmouth boxing match.
+        </video>
+        <p>Above is a video which is a short edit of a Portsmouth boxing match. This has been implemented using a video tag. There are three sources in order to provide back-ups in case a file type isn't recognised. (Please note, that it isn't me in the video either).</p>
+    </article>
+</main>
+<footer> 
+    <article>
+        <h3 id="validation">Validation</h3>
+        <p>Clicking on the logos below will direct you to the validation pages for my html and css respectively.</p>
+    </article>
+    <div id="footercontainer">
+        <a class="circle" href="https://validator.w3.org/check/referer" ><img class="footerimage" alt="HTML logo" src="media/html.png"></a>
+        <a class="circle" href="https://jigsaw.w3.org/css-validator/check/referer"><img class="footerimage" alt="CSS logo" src="media/css.png"></a>
+    </div>
+</footer>
+</html>

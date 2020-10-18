@@ -1,0 +1,33 @@
+/*****
+ Main
+*****/
+
+cite > a {
+    color: rgb(38, 38, 38);
+    text-decoration: none;
+    transition: background-color .3s ease-out; 
+}
+cite > a:hover {
+    background-color: rgba(38, 38, 38, 0.2);
+}
+cite > a:visited {
+    color: rgb(38, 38, 38);
+}
+#references + ul {
+    list-style: none;
+    margin: 0;
+}
+aside ~ article li:target {
+    animation: highlight 2s ease-out;
+}
+@keyframes highlight {
+    0% {
+        background-color: transparent;
+    }
+    50% {
+        background-color: rgb(38, 38, 38, 0.2);
+    }
+    100% {
+        background-color: transparent;
+    }
+}

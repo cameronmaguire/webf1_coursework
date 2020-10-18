@@ -1,0 +1,18 @@
+/*****
+ Main
+*****/
+
+aside ~ article ul {
+    list-style: circle;
+    margin-left: 2em;
+}
+aside ~ article li {
+    margin: 1em 0;
+}
+li > p {
+    margin: 0;
+}
+img {
+    height: auto;
+    width: 100%;
+}
